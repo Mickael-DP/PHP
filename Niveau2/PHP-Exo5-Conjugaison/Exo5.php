@@ -22,7 +22,7 @@ function conjuguaison($verbe){
 }
 
 conjuguaison("programmer");
-conjuguaison("coder");
+conjuguaison("coder"); 
 conjuguaison("manger");
-conjuguaison("nager");
+conjuguaison("nager"); 
 ?>
