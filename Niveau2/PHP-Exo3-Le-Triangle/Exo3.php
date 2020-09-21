@@ -11,7 +11,7 @@ function display_triangle ($ligne) {
         }
         echo "<br>";
     }
-}
+}  
 
 display_triangle (10);
 

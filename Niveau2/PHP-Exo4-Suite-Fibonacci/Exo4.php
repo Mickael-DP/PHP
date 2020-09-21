@@ -17,7 +17,7 @@ function fibonacci($suite){
     }else {
         echo "Votre nombre n'est pas valide";
     }
-
+ 
     echo "<p> En " . $suite . " mois, si chaque couple de lapins engendre tous les mois 
     un nouveau couple à compter du second mois de son existence, 
     on obtient ". $n3 . " couples de lapins.";

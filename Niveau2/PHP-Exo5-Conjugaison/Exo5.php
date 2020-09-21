@@ -20,7 +20,7 @@ function conjuguaison($verbe){
         }
     }
 }
-
+ 
 conjuguaison("programmer");
 conjuguaison("coder"); 
 conjuguaison("manger");

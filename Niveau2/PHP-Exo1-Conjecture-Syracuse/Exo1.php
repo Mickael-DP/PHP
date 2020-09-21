@@ -18,7 +18,7 @@ function conjecture($number){
     } else {
         echo("Le nombre choisi est invalide");
     }
-}
+}  
 
 echo conjecture(25);
 
