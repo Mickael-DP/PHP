@@ -1,0 +1,11 @@
+.column{
+    display: inline-flex;
+}
+
+.titre-page{
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    color: rgb(255, 174, 0);
+
+}
