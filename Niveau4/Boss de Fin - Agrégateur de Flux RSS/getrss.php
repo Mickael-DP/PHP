@@ -39,7 +39,7 @@ function loadrss($url)
      * - date de la news
      *
      * C'est à partie de toutes ces infos que vous générerez le code HTML */
-
+    
      foreach ($x as $item){
 
          $titre = $item->getElementsByTagName('title')->item(0)->nodeValue;
@@ -49,12 +49,12 @@ function loadrss($url)
          $date = $item->getElementsByTagName('pubDate')->item(0)->nodeValue;
 
          echo "<a class='' href='" . $lien . "'>" .
-               "<div class='column is-4'><div class='card'>" . 
-               "<div class='card_image'><figure class='image is-4by3'><img src='" . $img . "'></figure></div>" . 
-               "<div class='card-content'><div class='media-content'><p class='media-title'>" . $titre . "</p>" . 
-               "<p class=''>" . $desc . "</p>" . 
-               "<p class=''" . $date . "</p>" . 
-               "</div></div></div></div></a>";
+               "<div class='column is-4' style='display:inline-flex'><div class='card'>" . 
+               "<div class='card_image'><figure class='image is-5by3'><img src='" . $img . "'></figure></div>" . 
+               "<div class='card-content'><div class='media-content'><p class='media-title'><strong>" . $titre . "</strong></p>" . 
+               "<div class='content'><p class='decription'>" . $desc  .  "</p>" . 
+               "<div class='has-text-weight-light is-italic has-text-right''><p>" . $date . "</p></div>" . 
+               "</div></div></div></div></div></a>";
      }
 }
 

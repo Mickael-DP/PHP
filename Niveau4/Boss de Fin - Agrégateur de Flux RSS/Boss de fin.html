@@ -7,14 +7,13 @@
     <title>Boss de fin, Niveau 4</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="bulma.js"></script>
 </head>
 
     <body class="has-background-link">
 
-        <h1 class="titre-page">Flux RSS de JeuxVideo.com</h1>
+        <div class="has-background-warning"><h1 class="has-text-link has-text-centered has-text-weight-bold is-size-1">Flux RSS JeuxVideo.com</h1></div>
         <div class="container">
             <div class="columns"></div>
         </div>
@@ -27,19 +26,13 @@
                 url: "getrss.php",
                 dataType:"html",
                 success: function (data) {
-                    $(".container").append(data)
-                }
-            })
-           }
-
-           setInterval(ajax(), 5000);
-            
-        // $(function(){
-        //     $(".container").load("getrss.php");
-        //     setInterval(function(){$(".container").load("getrss.php");},5000);
-        // })
-            
-   
+                    $(".container").html (data);
+                    setTimeout(function(){ ajax(); }, 15000);
+                    }
+                
+                })
+            }
+           ajax();
 
         </script>
            
